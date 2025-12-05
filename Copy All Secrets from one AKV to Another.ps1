@@ -1,4 +1,4 @@
-﻿#######Powershell script for copying secrets from one Azure Key Vault to another#####
+﻿#######Powershell script for copying all secrets from one Azure Key Vault to another#####
 
 # Variables for the source and destination Key Vault names
 $sourceVaultName = "pot2"
@@ -30,3 +30,4 @@ foreach ($secretMetadata in $secrets) {
         Write-Host "Secret '$secretName' has no value and will not be copied."
     }
 }
+
